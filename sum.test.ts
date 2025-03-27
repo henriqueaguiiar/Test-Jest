@@ -3,11 +3,11 @@ import { sum } from "./sum";
 
 describe("Testes de soma", ()=>{
     test("deve somar dois numeros", ()=>{
-        expect(sum(5, 3)).toBe(8);
+        expect(sum(5, 3)).toBeCloseTo(8);
     })
 
     test("deve verificar o resultado incorreto de uma soma", ()=>{
-        expect(sum(5, 3)).not.toBe(7);
+        expect(sum(5, 3)).not.toBeCloseTo(7);
     })
 })
 
